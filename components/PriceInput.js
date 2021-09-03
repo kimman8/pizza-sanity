@@ -2,7 +2,7 @@ import React from 'react';
 import PatchEvent, { set, unset } from 'part:@sanity/form-builder/patch-event';
 
 function createPatchFrom(value) {
-  console.log('does it vark??');
+  // console.log('does it vark??');
   return PatchEvent.from(value === '' ? unset() : set(Number(value)));
 }
 

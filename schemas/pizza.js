@@ -55,7 +55,7 @@ export default {
       topping3: 'toppings.3.name',
     },
     prepare: ({ title, media, ...toppings }) => {
-      console.log('STAY');
+      // console.log('STAY');
       const tops = Object.values(toppings).filter(Boolean);
       return {
         title,
