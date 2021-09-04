@@ -1,4 +1,5 @@
 import { MdPerson as icon } from 'react-icons/md';
+import PriceInput from '../components/PriceInput';
 
 export default {
   name: 'person',
@@ -25,6 +26,14 @@ export default {
       title: 'Description',
       type: 'text',
       description: 'Tell us a bit about them',
+    },
+    {
+      name: 'price',
+      title: 'Price',
+      type: 'number',
+      description: 'Price of the meal in cents',
+      inputComponent: PriceInput,
+      validation: (Rule) => Rule.min(100),
     },
     {
       name: 'image',

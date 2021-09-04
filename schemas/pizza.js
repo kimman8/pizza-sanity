@@ -3,24 +3,30 @@ import PriceInput from '../components/PriceInput';
 
 export default {
   name: 'pizza',
-  title: 'Pizzas',
+  title: 'Meals',
   type: 'document',
   icon,
   fields: [
     {
       name: 'name',
-      title: 'Pizza Name',
+      title: 'Meal Name',
       type: 'string',
-      description: 'Name of the pizza',
+      description: 'Name of the meal',
     },
     {
       name: 'slug',
-      title: 'slug',
+      title: 'sluggyyy',
       type: 'slug',
       options: {
         source: 'name',
         maxLength: 100,
       },
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+      description: 'Tell us a bit about them',
     },
     {
       name: 'image',
@@ -34,9 +40,9 @@ export default {
       name: 'price',
       title: 'Price',
       type: 'number',
-      description: 'Price of the pizza in cents',
+      description: 'Price of the meal in cents',
       inputComponent: PriceInput,
-      validation: (Rule) => Rule.min(1000),
+      validation: (Rule) => Rule.min(100),
     },
     {
       name: 'toppings',
