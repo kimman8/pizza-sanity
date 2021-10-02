@@ -15,11 +15,27 @@ export default {
     },
     {
       name: 'slug',
-      title: 'sluggyyy',
+      title: 'slug',
       type: 'slug',
       options: {
         source: 'name',
         maxLength: 100,
+      },
+    },
+    {
+      name: 'entree',
+      title: 'Entree',
+      type: 'boolean',
+      options: {
+        layout: 'checkbox',
+      },
+    },
+    {
+      name: 'riceOrNoodle',
+      title: 'RiceOrNoodle',
+      type: 'boolean',
+      options: {
+        layout: 'checkbox',
       },
     },
     {
